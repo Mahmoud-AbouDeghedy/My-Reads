@@ -17,7 +17,7 @@ class BooksApp extends React.Component {
     });
   }
   updateShelf = (book, shelf) => {
-    BooksAPI.update(book, shelf).then((b) => {
+    BooksAPI.update(book, shelf).then(() => {
       this.showBooks();
     });
   };
